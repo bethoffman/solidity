@@ -80,7 +80,7 @@ concept ShuffleOperationConcept = requires(ShuffleOperations ops, size_t sourceO
 	// Returns zero if the amount of occurrences, in the current source layout, of the slot at the given target offset
 	// matches the desired amount of occurrences in the target.
 	{ ops.targetMultiplicity(targetOffset) } -> std::convertible_to<int>;
-	// Returns true, iff any slot is compatible with the given target offset.
+	// Returns true, if any slot is compatible with the given target offset.
 	{ ops.targetIsArbitrary(targetOffset) } -> std::convertible_to<bool>;
 	// Returns the number of slots in the source layout.
 	{ ops.sourceSize() } -> std::convertible_to<size_t>;
