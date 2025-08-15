@@ -204,7 +204,7 @@ public:
 	/// Must be set before parsing.
 	void setRemappings(std::vector<ImportRemapper::Remapping> _remappings);
 
-	/// Sets library addresses. Addresses are cleared iff @a _libraries is missing.
+	/// Sets library addresses. Addresses are cleared if @a _libraries is missing.
 	/// Must be set before parsing.
 	void setLibraries(std::map<std::string, util::h160> const& _libraries = {});
 
